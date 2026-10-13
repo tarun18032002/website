@@ -60,7 +60,15 @@ module.exports = async function handler(req, res) {
 
   // Validate the website origin.
   // This is not a substitute for rate limiting.
-  if (!originAllowed(req.headers.origin)) {
+  if (!originAllowed(req)) {
+    // Log only the origin (no applicant data) so a 403 is easy to diagnose.
+    console.warn(
+      "Rejected origin:",
+      String(req.headers.origin || "(none)").slice(0, 200),
+      "host:",
+      String(req.headers["x-forwarded-host"] || req.headers.host || "").slice(0, 200)
+    );
+
     return res.status(403).json({
       success: false,
       message: "Origin not allowed"
@@ -253,11 +261,21 @@ module.exports = async function handler(req, res) {
   }
 };
 
-function originAllowed(origin) {
-  const normalized = normalizeOrigin(origin);
+function originAllowed(req) {
+  const normalized = normalizeOrigin(req.headers.origin);
 
   if (!normalized) {
     return false;
+  }
+
+  // Same-site request: the form page and this API share one host.
+  // Covers production, per-deployment URLs and custom domains.
+  const host = String(
+    req.headers["x-forwarded-host"] || req.headers.host || ""
+  ).split(",")[0].trim().toLowerCase();
+
+  if (host && normalized.toLowerCase() === `https://${host}`) {
+    return true;
   }
 
   const allowed = [

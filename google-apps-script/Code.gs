@@ -3,7 +3,7 @@
 // ===========================================
 // Paste this into Extensions > Apps Script of your Google Sheet.
 // Project Settings > Script properties:
-//   SECRET       = same value as GOOGLE_SCRIPT_SECRET in Vercel (required)
+//   SECRET (or API_SHARED_SECRET) = same value as GOOGLE_SCRIPT_SECRET in Vercel (required)
 //   NOTIFY_EMAIL = where alerts go (optional, defaults to the sheet owner's Gmail)
 // Deploy > Manage deployments > Edit > Version: New version,
 //   Execute as: Me, Who has access: Anyone  (must be "Anyone", or the website gets a sign-in page)
@@ -51,7 +51,7 @@ function doPost(e) {
   }
 
   const props = PropertiesService.getScriptProperties();
-  const secret = props.getProperty("SECRET");
+  const secret = props.getProperty("SECRET") || props.getProperty("API_SHARED_SECRET");
   if (!secret || data.secret !== secret) {
     return json({ success: false, message: "Unauthorized" });
   }

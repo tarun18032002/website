@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="t">
+  <title id="t">Delivery rider on a scooter carrying a parcel box</title>
+  <rect width="600" height="400" rx="24" fill="#eaf1ff"/>
+  <!-- city skyline -->
+  <g fill="#d3e0f7">
+    <rect x="40" y="150" width="60" height="150"/><rect x="110" y="110" width="50" height="190"/>
+    <rect x="170" y="170" width="70" height="130"/><rect x="420" y="120" width="55" height="180"/>
+    <rect x="485" y="160" width="75" height="140"/>
+  </g>
+  <!-- location pin -->
+  <g transform="translate(470 60)">
+    <path d="M30 0C13 0 0 13 0 30c0 22 30 52 30 52s30-30 30-52C60 13 47 0 30 0z" fill="#ff7a00"/>
+    <circle cx="30" cy="30" r="11" fill="#fff"/>
+  </g>
+  <!-- road -->
+  <rect y="300" width="600" height="100" fill="#0b3d91"/>
+  <g stroke="#fff" stroke-width="6" stroke-dasharray="40 30"><line x1="0" y1="350" x2="600" y2="350"/></g>
+  <!-- speed lines -->
+  <g stroke="#0b3d91" stroke-width="6" stroke-linecap="round" opacity=".35">
+    <line x1="60" y1="220" x2="130" y2="220"/><line x1="40" y1="250" x2="120" y2="250"/><line x1="80" y1="280" x2="140" y2="280"/>
+  </g>
+  <!-- scooter -->
+  <g transform="translate(150 150)">
+    <circle cx="60" cy="150" r="34" fill="#1a2233"/><circle cx="60" cy="150" r="14" fill="#9fb0d0"/>
+    <circle cx="260" cy="150" r="34" fill="#1a2233"/><circle cx="260" cy="150" r="14" fill="#9fb0d0"/>
+    <path d="M30 140 Q40 90 110 95 L210 95 Q250 95 262 140 Z" fill="#ff7a00"/>
+    <path d="M230 100 L265 30 L285 30" stroke="#1a2233" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <circle cx="282" cy="40" r="9" fill="#ffd34d"/>
+    <!-- delivery box -->
+    <rect x="10" y="10" width="105" height="85" rx="8" fill="#0b3d91"/>
+    <rect x="10" y="40" width="105" height="10" fill="#ff7a00"/>
+    <text x="62" y="80" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">PARCEL</text>
+    <!-- rider -->
+    <path d="M150 95 L170 40 Q178 20 200 25 L215 30 Q228 35 222 55 L210 95 Z" fill="#12a76a"/>
+    <path d="M210 50 L255 45" stroke="#12a76a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M165 95 L195 135" stroke="#1a2233" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="200" cy="2" r="24" fill="#c98b5f"/>
+    <path d="M174 0 Q176 -28 202 -28 Q228 -28 228 0 Z" fill="#ff7a00"/>
+    <rect x="200" y="-6" width="30" height="8" rx="4" fill="#1a2233"/>
+  </g>
+</svg>

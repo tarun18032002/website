@@ -1,50 +1,424 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Delivery Staffing Partner</title>
-<meta name="description" content="Verified delivery riders for companies and delivery opportunities for riders.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="icon" href="images/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delivery Staffing Partner</title>
+  <meta name="description" content="Verified delivery riders for companies and delivery opportunities for riders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="nav"><div class="container nav-inner">
-<!-- Old brand: <a class="brand" href="#top"><span class="brand-mark">▲</span> <span data-config="name"></span></a> -->
-<a class="brand" href="#top" aria-label="ATSG home"><img class="brand-logo" src="images/logo.svg" alt="ATSG logo" width="40" height="40"><span class="brand-text"><strong data-config="shortName"></strong><small data-config="name"></small></span></a>
-<nav class="nav-links" id="navLinks"><a href="#services" data-i18n="nav.services">Services</a><a href="#process" data-i18n="nav.process">How it works</a><a href="#why" data-i18n="nav.why">Why us</a><a href="#riders" data-i18n="nav.riders">Join as rider</a><a href="#contact" data-i18n="nav.contact">Contact</a></nav>
-<div class="nav-actions"><button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">ಕನ್ನಡ</button><a href="#enquiry" class="btn btn-primary btn-sm" data-i18n="nav.cta">Hire riders</a><button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></div>
-</div></header>
-<main id="top">
-<section class="hero"><div class="container hero-grid"><div><p class="eyebrow" data-i18n="hero.eyebrow">Delivery workforce partner</p><h1 data-i18n="hero.title">Verified delivery riders, ready when you need them.</h1><p class="lead" data-i18n="hero.lead">We recruit, verify and train delivery executives and deploy them to e-commerce, food delivery and quick-commerce companies — so you can scale your fleet without the hiring headache.</p><div class="hero-cta"><a href="#enquiry" class="btn btn-primary" data-i18n="hero.cta1">Request riders</a><a href="#riders" class="btn btn-ghost" data-i18n="hero.cta2">I want a delivery job</a></div></div><div class="hero-side"><!-- Old hero photo (generic motorcycle), replaced by the two choice cards below:
-<img class="feature-image hero-image" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1300&q=80" alt="Motorcycle ready for a delivery journey" loading="eager">
--->
-<div class="paths"><a href="#enquiry" class="path-card"><img src="images/company-hub.svg" alt="Company delivery hub with riders" loading="eager"><span class="path-tag" data-i18n="path.c.tag">For companies</span><strong data-i18n="path.c.t">I need delivery riders</strong><span class="path-go" data-i18n="path.c.go">Send requirement →</span></a><a href="#riders" class="path-card path-rider"><img src="images/rider-delivery.svg" alt="Delivery rider on a scooter" loading="eager"><span class="path-tag" data-i18n="path.r.tag">For riders</span><strong data-i18n="path.r.t">I want a delivery job</strong><span class="path-go" data-i18n="path.r.go">Apply now →</span></a></div><div class="hero-card"><div class="stat"><strong data-config="statRiders"></strong><span data-i18n="stat.riders">Riders onboarded</span></div><div class="stat"><strong data-config="statClients"></strong><span data-i18n="stat.clients">Client hubs served</span></div><div class="stat"><strong data-i18n="stat.hours">48 hrs</strong><span data-i18n="stat.time">Typical deployment time</span></div><div class="stat"><strong>100%</strong><span data-i18n="stat.verified">Document verified</span></div></div></div></div></section>
-<section id="services" class="section"><div class="container"><h2 data-i18n="services.title">What we do</h2><p class="section-lead" data-i18n="services.lead">End-to-end rider supply for last-mile delivery operations.</p><div class="cards"><article class="card"><div class="icon">🧑‍💼</div><h3 data-i18n="s1.t">Rider sourcing</h3><p data-i18n="s1.d">Large local pool of two-wheeler riders, sourced and screened for your hub locations.</p></article><article class="card"><div class="icon">🪪</div><h3 data-i18n="s2.t">Verification</h3><p data-i18n="s2.d">Aadhaar, PAN, driving licence, RC and bank details checked before every deployment.</p></article><article class="card"><div class="icon">🎓</div><h3 data-i18n="s3.t">Training</h3><p data-i18n="s3.d">App usage, customer handling, safe riding and cash-on-delivery process training.</p></article><article class="card"><div class="icon">🔁</div><h3 data-i18n="s4.t">Replacement & support</h3><p data-i18n="s4.d">Quick replacements for drop-offs and a single point of contact for your hub managers.</p></article></div></div></section>
-<section class="section section-alt"><div class="container"><h2 data-i18n="ind.title">Industries we serve</h2><div class="chips"><span class="chip" data-i18n="ind.1">E-commerce</span><span class="chip" data-i18n="ind.2">Food delivery</span><span class="chip" data-i18n="ind.3">Quick commerce / grocery</span><span class="chip" data-i18n="ind.4">Courier & logistics</span><span class="chip" data-i18n="ind.5">Pharmacy</span><span class="chip" data-i18n="ind.6">Local businesses</span></div></div></section>
-<section id="process" class="section"><div class="container"><h2 data-i18n="process.title">How it works</h2><ol class="steps"><li><span class="num">1</span><h3 data-i18n="p1.t">Share your requirement</h3><p data-i18n="p1.d">Tell us the hub location, number of riders, shift timings and start date.</p></li><li><span class="num">2</span><h3 data-i18n="p2.t">We shortlist & verify</h3><p data-i18n="p2.d">Riders are interviewed, documents verified and vehicles checked.</p></li><li><span class="num">3</span><h3 data-i18n="p3.t">Training & onboarding</h3><p data-i18n="p3.d">Riders are trained on your process and onboarded onto your app.</p></li><li><span class="num">4</span><h3 data-i18n="p4.t">Deploy & support</h3><p data-i18n="p4.d">Riders report to your hub. We track attendance and handle replacements.</p></li></ol></div></section>
-<section id="why" class="section section-alt"><div class="container why-grid"><div><h2 data-i18n="why.title">Why companies choose us</h2><p class="section-lead" data-i18n="why.lead">A family-run business that treats every rider and every client personally.</p><!-- Old photo: <img class="feature-image company-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80" alt="Employees collaborating on company staffing needs" loading="lazy"> -->
-<img class="feature-image company-image" src="images/verified-rider.svg" alt="Rider ID card with documents verified" loading="lazy"></div><ul class="checks"><li data-i18n="why.1">Fast deployment — riders in as little as 48 hours</li><li data-i18n="why.2">Local riders who know the city's roads</li><li data-i18n="why.3">Every document verified before joining</li><li data-i18n="why.4">Free replacement for early drop-offs</li><li data-i18n="why.5">Daily attendance and performance updates</li><li data-i18n="why.6">Transparent, per-rider pricing</li></ul></div></section>
-<section id="enquiry" class="section"><div class="container form-wrap"><div><p class="eyebrow" data-i18n="tag.company">For companies</p><h2 data-i18n="enq.title">Need delivery riders?</h2><p class="section-lead" data-i18n="enq.lead">Fill in your requirements and contact us by email. No phone number needed.</p><!-- Old photo: <img class="feature-image form-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=80" alt="Team of employees at a workplace" loading="lazy"> -->
-<img class="feature-image form-image" src="images/company-hub.svg" alt="Company delivery hub with riders" loading="lazy"><div class="contact-mini"><a data-config-href="mailto" class="contact-line">✉️ <span data-config="email"></span></a>
-<!-- Phone & WhatsApp hidden for now (re-enable with phone/whatsapp in CONFIG):
-<a data-config-href="tel" class="contact-line">📞 <span data-config="phone"></span></a>
-<a data-config-href="whatsapp" class="contact-line" target="_blank" rel="noopener">💬 WhatsApp</a>
--->
-</div></div><form id="clientForm" class="form" name="client-enquiry" action="/api/submit-form" method="post"><input type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" ><div class="row"><label><span data-i18n="f.company">Company name</span><input name="company" required></label><label><span data-i18n="f.contact">Contact person</span><input name="contact_person" required></label></div><label><span data-i18n="f.email">Email</span><input name="email" type="email" required></label><div class="row"><label><span data-i18n="f.location">Hub location / area</span><input name="location" required></label><label><span data-i18n="f.count">Riders needed</span><input name="riders_needed" type="number" min="1" required></label></div><div class="row"><label><span data-i18n="f.vehicle">Vehicle type</span><select name="vehicle"><option value="Bike" data-i18n="v.bike">Bike / scooter</option><option value="EV" data-i18n="v.ev">Electric vehicle</option><option value="Cycle" data-i18n="v.cycle">Bicycle</option><option value="Any" data-i18n="v.any">Any</option></select></label><label><span data-i18n="f.start">Start date</span><input name="start_date" type="date"></label></div><label><span data-i18n="f.notes">Shift timings / other details</span><textarea name="notes" rows="3"></textarea></label><button class="btn btn-primary btn-block" type="submit" data-i18n="f.submitClient">Submit enquiry</button><p class="form-note" data-i18n="form.note">Your details will be submitted securely.</p></form></div></section>
-<section id="riders" class="section section-dark"><div class="container form-wrap"><div><p class="eyebrow" data-i18n="tag.rider">For delivery riders</p><h2 data-i18n="rider.title">Looking for a delivery job?</h2><p class="section-lead" data-i18n="rider.lead">Join leading delivery companies through us. Flexible shifts and joining support.</p><!-- Old photo: <img class="feature-image rider-image" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80" alt="Motorcycle for a delivery rider application" loading="lazy"> -->
-<img class="feature-image rider-image" src="images/rider-delivery.svg" alt="Delivery rider on a scooter" loading="lazy"><ul class="checks checks-light"><li data-i18n="rider.r1">Age 18+ with a valid driving licence</li><li data-i18n="rider.r2">Own bike/scooter (EV options available)</li><li data-i18n="rider.r3">Smartphone with internet</li><li data-i18n="rider.r4">Aadhaar, PAN and bank account</li></ul></div><form id="riderForm" class="form" name="rider-application" action="/api/submit-form" method="post"><input type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px" ><div class="row"><label><span data-i18n="f.name">Full name</span><input name="name" required></label><label><span data-i18n="f.email">Email</span><input name="email" type="email" required></label></div><div class="row"><label><span data-i18n="f.area">Area you live in</span><input name="area" required></label><label><span data-i18n="f.age">Age</span><input name="age" type="number" min="18" max="65" required></label></div><div class="row"><label><span data-i18n="f.vehicle">Vehicle type</span><select name="vehicle"><option value="Bike" data-i18n="v.bike">Bike / scooter</option><option value="EV" data-i18n="v.ev">Electric vehicle</option><option value="Cycle" data-i18n="v.cycle">Bicycle</option><option value="None" data-i18n="v.none">No vehicle</option></select></label><label><span data-i18n="f.licence">Driving licence?</span><select name="licence"><option value="Yes" data-i18n="yes">Yes</option><option value="No" data-i18n="no">No</option></select></label></div><label><span data-i18n="f.exp">Previous delivery experience (if any)</span><input name="experience"></label><button class="btn btn-accent btn-block" type="submit" data-i18n="f.submitRider">Submit application</button><p class="form-note" data-i18n="form.note">Your details will be submitted securely.</p></form></div></section>
-<section class="section"><div class="container narrow"><h2 data-i18n="faq.title">Frequently asked questions</h2><details><summary data-i18n="q1">How quickly can you supply riders?</summary><p data-i18n="a1">For most requirements we deploy verified riders within 48–72 hours.</p></details><details><summary data-i18n="q2">What if a rider leaves early?</summary><p data-i18n="a2">We provide a free replacement for riders who leave within the agreed period.</p></details><details><summary data-i18n="q3">Do riders pay any fee to join?</summary><p data-i18n="a3">No. Joining through us is free for riders.</p></details><details><summary data-i18n="q4">Which areas do you cover?</summary><p data-i18n="a4">We currently cover the city and nearby areas. Contact us for other locations.</p></details></div></section>
-<section id="contact" class="section section-alt"><div class="container contact-grid"><div><h2 data-i18n="contact.title">Contact us</h2><p data-config="address"></p></div><div class="contact-mini"><a data-config-href="mailto" class="contact-line">✉️ <span data-config="email"></span></a>
-<!-- Phone & WhatsApp hidden for now (re-enable with phone/whatsapp in CONFIG):
-<a data-config-href="tel" class="contact-line">📞 <span data-config="phone"></span></a>
-<a data-config-href="whatsapp" class="contact-line" target="_blank" rel="noopener">💬 WhatsApp</a>
--->
-</div></div></section>
-</main><footer class="footer"><div class="container"><p>© <span id="year"></span> <span data-config="name"></span>. <span data-i18n="footer">All rights reserved.</span></p></div></footer>
-<!-- WhatsApp floating button hidden for now:
-<a class="wa-float" data-config-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
--->
-<script src="script.js"></script>
-</body></html>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="ATSG home">
+        <img class="brand-logo" src="images/logo.svg" alt="ATSG logo" width="40" height="40">
+        <span class="brand-text">
+          <strong data-config="shortName"></strong>
+          <small data-config="name"></small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">How it works</a>
+        <a href="#why" data-i18n="nav.why">Why us</a>
+        <a href="#riders" data-i18n="nav.riders">Join as rider</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">ಕನ್ನಡ</button>
+        <a href="#enquiry" class="btn btn-primary btn-sm" data-i18n="nav.cta">Hire riders</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Delivery workforce partner</p>
+          <h1 data-i18n="hero.title">Verified delivery riders, ready when you need them.</h1>
+          <p class="lead" data-i18n="hero.lead">
+            We recruit, verify and train delivery executives and deploy them to e-commerce,
+            food delivery and quick-commerce companies — so you can scale your fleet
+            without the hiring headache.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#enquiry" class="btn btn-primary" data-i18n="hero.cta1">Request riders</a>
+            <a href="#riders" class="btn btn-ghost" data-i18n="hero.cta2">I want a delivery job</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="paths">
+            <a href="#enquiry" class="path-card">
+              <img src="images/company-hub.svg" alt="Company delivery hub with riders" loading="eager">
+              <span class="path-tag" data-i18n="path.c.tag">For companies</span>
+              <strong data-i18n="path.c.t">I need delivery riders</strong>
+              <span class="path-go" data-i18n="path.c.go">Send requirement →</span>
+            </a>
+
+            <a href="#riders" class="path-card path-rider">
+              <img src="images/rider-delivery.svg" alt="Delivery rider on a scooter" loading="eager">
+              <span class="path-tag" data-i18n="path.r.tag">For riders</span>
+              <strong data-i18n="path.r.t">I want a delivery job</strong>
+              <span class="path-go" data-i18n="path.r.go">Apply now →</span>
+            </a>
+          </div>
+
+          <div class="hero-card">
+            <div class="stat">
+              <strong data-config="statRiders"></strong>
+              <span data-i18n="stat.riders">Riders onboarded</span>
+            </div>
+            <div class="stat">
+              <strong data-config="statClients"></strong>
+              <span data-i18n="stat.clients">Client hubs served</span>
+            </div>
+            <div class="stat">
+              <strong data-i18n="stat.hours">48 hrs</strong>
+              <span data-i18n="stat.time">Typical deployment time</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span data-i18n="stat.verified">Document verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 data-i18n="services.title">What we do</h2>
+        <p class="section-lead" data-i18n="services.lead">
+          End-to-end rider supply for last-mile delivery operations.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🧑‍💼</div>
+            <h3 data-i18n="s1.t">Rider sourcing</h3>
+            <p data-i18n="s1.d">Large local pool of two-wheeler riders, sourced and screened for your hub locations.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🪪</div>
+            <h3 data-i18n="s2.t">Verification</h3>
+            <p data-i18n="s2.d">Aadhaar, PAN, driving licence, RC and bank details checked before every deployment.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎓</div>
+            <h3 data-i18n="s3.t">Training</h3>
+            <p data-i18n="s3.d">App usage, customer handling, safe riding and cash-on-delivery process training.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🔁</div>
+            <h3 data-i18n="s4.t">Replacement & support</h3>
+            <p data-i18n="s4.d">Quick replacements for drop-offs and a single point of contact for your hub managers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 data-i18n="ind.title">Industries we serve</h2>
+        <div class="chips">
+          <span class="chip" data-i18n="ind.1">E-commerce</span>
+          <span class="chip" data-i18n="ind.2">Food delivery</span>
+          <span class="chip" data-i18n="ind.3">Quick commerce / grocery</span>
+          <span class="chip" data-i18n="ind.4">Courier & logistics</span>
+          <span class="chip" data-i18n="ind.5">Pharmacy</span>
+          <span class="chip" data-i18n="ind.6">Local businesses</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section">
+      <div class="container">
+        <h2 data-i18n="process.title">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <h3 data-i18n="p1.t">Share your requirement</h3>
+            <p data-i18n="p1.d">Tell us the hub location, number of riders, shift timings and start date.</p>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <h3 data-i18n="p2.t">We shortlist & verify</h3>
+            <p data-i18n="p2.d">Riders are interviewed, documents verified and vehicles checked.</p>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <h3 data-i18n="p3.t">Training & onboarding</h3>
+            <p data-i18n="p3.d">Riders are trained on your process and onboarded onto your app.</p>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <h3 data-i18n="p4.t">Deploy & support</h3>
+            <p data-i18n="p4.d">Riders report to your hub. We track attendance and handle replacements.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section id="why" class="section section-alt">
+      <div class="container why-grid">
+        <div>
+          <h2 data-i18n="why.title">Why companies choose us</h2>
+          <p class="section-lead" data-i18n="why.lead">
+            A family-run business that treats every rider and every client personally.
+          </p>
+          <img class="feature-image company-image" src="images/verified-rider.svg"
+               alt="Rider ID card with documents verified" loading="lazy">
+        </div>
+
+        <ul class="checks">
+          <li data-i18n="why.1">Fast deployment — riders in as little as 48 hours</li>
+          <li data-i18n="why.2">Local riders who know the city's roads</li>
+          <li data-i18n="why.3">Every document verified before joining</li>
+          <li data-i18n="why.4">Free replacement for early drop-offs</li>
+          <li data-i18n="why.5">Daily attendance and performance updates</li>
+          <li data-i18n="why.6">Transparent, per-rider pricing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Client Enquiry -->
+    <section id="enquiry" class="section">
+      <div class="container form-wrap">
+        <div>
+          <p class="eyebrow" data-i18n="tag.company">For companies</p>
+          <h2 data-i18n="enq.title">Need delivery riders?</h2>
+          <p class="section-lead" data-i18n="enq.lead">
+            Fill in your requirements and contact us by email. No phone number needed.
+          </p>
+          <img class="feature-image form-image" src="images/company-hub.svg"
+               alt="Company delivery hub with riders" loading="lazy">
+          <div class="contact-mini">
+            <a data-config-href="mailto" class="contact-line">
+              ✉️ <span data-config="email"></span>
+            </a>
+          </div>
+        </div>
+
+        <form id="clientForm" class="form" name="client-enquiry"
+              action="/api/submit-form" method="post">
+
+          <input type="text" name="botcheck" tabindex="-1" autocomplete="off"
+                 aria-hidden="true" style="position:absolute;left:-9999px">
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.company">Company name</span>
+              <input name="company" required>
+            </label>
+            <label>
+              <span data-i18n="f.contact">Contact person</span>
+              <input name="contact_person" required>
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="f.email">Email</span>
+            <input name="email" type="email" required>
+          </label>
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.location">Hub location / area</span>
+              <input name="location" required>
+            </label>
+            <label>
+              <span data-i18n="f.count">Riders needed</span>
+              <input name="riders_needed" type="number" min="1" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.vehicle">Vehicle type</span>
+              <select name="vehicle">
+                <option value="Bike" data-i18n="v.bike">Bike / scooter</option>
+                <option value="EV" data-i18n="v.ev">Electric vehicle</option>
+                <option value="Cycle" data-i18n="v.cycle">Bicycle</option>
+                <option value="Any" data-i18n="v.any">Any</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="f.start">Start date</span>
+              <input name="start_date" type="date">
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="f.notes">Shift timings / other details</span>
+            <textarea name="notes" rows="3"></textarea>
+          </label>
+
+          <button class="btn btn-primary btn-block" type="submit"
+                  data-i18n="f.submitClient">Submit enquiry</button>
+
+          <p class="form-note" data-i18n="form.note">
+            Your details will be submitted securely.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Rider Application -->
+    <section id="riders" class="section section-dark">
+      <div class="container form-wrap">
+        <div>
+          <p class="eyebrow" data-i18n="tag.rider">For delivery riders</p>
+          <h2 data-i18n="rider.title">Looking for a delivery job?</h2>
+          <p class="section-lead" data-i18n="rider.lead">
+            Join leading delivery companies through us. Flexible shifts and joining support.
+          </p>
+
+          <img class="feature-image rider-image" src="images/rider-delivery.svg"
+               alt="Delivery rider on a scooter" loading="lazy">
+
+          <ul class="checks checks-light">
+            <li data-i18n="rider.r1">Age 18+ with a valid driving licence</li>
+            <li data-i18n="rider.r2">Own bike/scooter (EV options available)</li>
+            <li data-i18n="rider.r3">Smartphone with internet</li>
+            <li data-i18n="rider.r4">Aadhaar, PAN and bank account</li>
+          </ul>
+        </div>
+
+        <form id="riderForm" class="form" name="rider-application"
+              action="/api/submit-form" method="post">
+
+          <input type="text" name="botcheck" tabindex="-1" autocomplete="off"
+                 aria-hidden="true" style="position:absolute;left:-9999px">
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.name">Full name</span>
+              <input name="name" required>
+            </label>
+
+            <label>
+              <span data-i18n="f.email">Email</span>
+              <input name="email" type="email" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.area">Area you live in</span>
+              <input name="area" required>
+            </label>
+
+            <label>
+              <span data-i18n="f.age">Age</span>
+              <input name="age" type="number" min="18" max="65" required>
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span data-i18n="f.vehicle">Vehicle type</span>
+              <select name="vehicle">
+                <option value="Bike" data-i18n="v.bike">Bike / scooter</option>
+                <option value="EV" data-i18n="v.ev">Electric vehicle</option>
+                <option value="Cycle" data-i18n="v.cycle">Bicycle</option>
+                <option value="None" data-i18n="v.none">No vehicle</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="f.licence">Driving licence?</span>
+              <select name="licence">
+                <option value="Yes" data-i18n="yes">Yes</option>
+                <option value="No" data-i18n="no">No</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="f.exp">Previous delivery experience (if any)</span>
+            <input name="experience">
+          </label>
+
+          <button class="btn btn-accent btn-block" type="submit"
+                  data-i18n="f.submitRider">Submit application</button>
+
+          <p class="form-note" data-i18n="form.note">
+            Your details will be submitted securely.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container narrow">
+        <h2 data-i18n="faq.title">Frequently asked questions</h2>
+        <details>
+          <summary data-i18n="q1">How quickly can you supply riders?</summary>
+          <p data-i18n="a1">For most requirements we deploy verified riders within 48–72 hours.</p>
+        </details>
+        <details>
+          <summary data-i18n="q2">What if a rider leaves early?</summary>
+          <p data-i18n="a2">We provide a free replacement for riders who leave within the agreed period.</p>
+        </details>
+        <details>
+          <summary data-i18n="q3">Do riders pay any fee to join?</summary>
+          <p data-i18n="a3">No. Joining through us is free for riders.</p>
+        </details>
+        <details>
+          <summary data-i18n="q4">Which areas do you cover?</summary>
+          <p data-i18n="a4">We currently cover the city and nearby areas. Contact us for other locations.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h2 data-i18n="contact.title">Contact us</h2>
+          <p data-config="address"></p>
+        </div>
+        <div class="contact-mini">
+          <a data-config-href="mailto" class="contact-line">
+            ✉️ <span data-config="email"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-config="name"></span>.
+        <span data-i18n="footer">All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

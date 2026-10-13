@@ -1,2 +1,10 @@
 .claude/
 .vercel/
+
+.vercel
+.env*
+
+.env
+.env.local
+.env.*
+.vercel/

@@ -18,10 +18,21 @@ python -m http.server 5500
 ```
 Open http://localhost:5500.
 
-## Forms (Web3Forms)
-1. Go to https://web3forms.com, enter your business email, get the free access key by mail.
-2. Paste it into `web3formsKey` in `script.js`.
-3. Every submission is emailed to you (subject "New client enquiry" / "New rider application"). Free: 250/month.
+## Forms (Google Sheet + email alert, free)
+Flow: website form -> `/api/submit-form` (Vercel) -> Google Apps Script -> new row in Google Sheet + email to you.
+
+1. Open your Google Sheet -> Extensions -> Apps Script. Paste `google-apps-script/Code.gs`. Save.
+2. Project Settings (gear) -> Script properties -> add `SECRET` (any long random text). Optional: `NOTIFY_EMAIL`.
+3. Deploy -> Manage deployments -> edit (pencil) -> Version: New version -> Execute as: Me -> **Who has access: Anyone** -> Deploy. Approve the permission prompt (Sheets + send email).
+   Editing the existing deployment keeps the same URL. "New deployment" gives a new URL that must be copied to Vercel.
+4. Vercel -> project -> Settings -> Environment Variables:
+   - `GOOGLE_SCRIPT_URL` = the web app URL ending in `/exec`
+   - `GOOGLE_SCRIPT_SECRET` = same text as `SECRET` above
+   - `SITE_ORIGIN` = your live site, e.g. `https://website-xxx.vercel.app`
+   Then redeploy.
+5. Check: open the `/exec` URL in a private browser window. It should show `{"success":true,"message":"ATSG form service is running"}`, not a Google sign-in page.
+
+Tabs "Company Enquiries" and "Rider Applications" are created automatically on first submission.
 
 ## Deploy free on Vercel
 Option A — CLI (from this folder):

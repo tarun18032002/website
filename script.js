@@ -10,7 +10,6 @@ const CONFIG = {
   // Old settings, hidden for now. Uncomment when a business phone / form key is ready:
   // phone: "+91 98765 43210",
   // whatsapp: "919876543210", // country code + number, digits only
-  // web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY", // free key from https://web3forms.com
 };
 // ===========================================
 
@@ -22,10 +21,10 @@ const KN = {
   "ind.title":"ನಾವು ಸೇವೆ ನೀಡುವ ಕ್ಷೇತ್ರಗಳು","ind.1":"ಇ-ಕಾಮರ್ಸ್","ind.2":"ಫುಡ್ ಡೆಲಿವರಿ","ind.3":"ಕ್ವಿಕ್ ಕಾಮರ್ಸ್ / ದಿನಸಿ","ind.4":"ಕೊರಿಯರ್ ಮತ್ತು ಲಾಜಿಸ್ಟಿಕ್ಸ್","ind.5":"ಔಷಧಾಲಯ","ind.6":"ಸ್ಥಳೀಯ ವ್ಯಾಪಾರಗಳು",
   "process.title":"ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ","p1.t":"ನಿಮ್ಮ ಅವಶ್ಯಕತೆ ತಿಳಿಸಿ","p1.d":"ಹಬ್ ಸ್ಥಳ, ರೈಡರ್‌ಗಳ ಸಂಖ್ಯೆ, ಶಿಫ್ಟ್ ಸಮಯ ಮತ್ತು ಪ್ರಾರಂಭ ದಿನಾಂಕ ತಿಳಿಸಿ.","p2.t":"ಆಯ್ಕೆ ಮತ್ತು ಪರಿಶೀಲನೆ","p2.d":"ರೈಡರ್‌ಗಳ ಸಂದರ್ಶನ, ದಾಖಲೆ ಪರಿಶೀಲನೆ ಮತ್ತು ವಾಹನ ತಪಾಸಣೆ.","p3.t":"ತರಬೇತಿ ಮತ್ತು ಸೇರ್ಪಡೆ","p3.d":"ನಿಮ್ಮ ಪ್ರಕ್ರಿಯೆಗೆ ತಕ್ಕಂತೆ ತರಬೇತಿ ನೀಡಿ ನಿಮ್ಮ ಆಪ್‌ಗೆ ಸೇರಿಸಲಾಗುತ್ತದೆ.","p4.t":"ನಿಯೋಜನೆ ಮತ್ತು ಬೆಂಬಲ","p4.d":"ರೈಡರ್‌ಗಳು ನಿಮ್ಮ ಹಬ್‌ಗೆ ಬರುತ್ತಾರೆ. ಹಾಜರಾತಿ ಮತ್ತು ಬದಲಿ ನಾವು ನೋಡಿಕೊಳ್ಳುತ್ತೇವೆ.",
   "why.title":"ಕಂಪನಿಗಳು ನಮ್ಮನ್ನು ಏಕೆ ಆರಿಸುತ್ತವೆ","why.lead":"ಪ್ರತಿ ರೈಡರ್ ಮತ್ತು ಪ್ರತಿ ಗ್ರಾಹಕರನ್ನು ವೈಯಕ್ತಿಕವಾಗಿ ನೋಡಿಕೊಳ್ಳುವ ಕುಟುಂಬ ವ್ಯವಹಾರ.","why.1":"ತ್ವರಿತ ನಿಯೋಜನೆ — 48 ಗಂಟೆಗಳಲ್ಲಿ ರೈಡರ್‌ಗಳು","why.2":"ನಗರದ ರಸ್ತೆಗಳನ್ನು ಬಲ್ಲ ಸ್ಥಳೀಯ ರೈಡರ್‌ಗಳು","why.3":"ಸೇರುವ ಮೊದಲು ಎಲ್ಲಾ ದಾಖಲೆಗಳ ಪರಿಶೀಲನೆ","why.4":"ಬೇಗ ಬಿಟ್ಟರೆ ಉಚಿತ ಬದಲಿ","why.5":"ದೈನಂದಿನ ಹಾಜರಾತಿ ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರದಿ","why.6":"ಪಾರದರ್ಶಕ, ಪ್ರತಿ-ರೈಡರ್ ದರ",
-  "enq.title":"ಡೆಲಿವರಿ ರೈಡರ್‌ಗಳು ಬೇಕೇ?","enq.lead":"ನಿಮ್ಮ ಅಗತ್ಯಗಳನ್ನು ತುಂಬಿ ಇಮೇಲ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ. ಫೋನ್ ಸಂಖ್ಯೆ ಅಗತ್ಯವಿಲ್ಲ.","f.company":"ಕಂಪನಿ ಹೆಸರು","f.contact":"ಸಂಪರ್ಕ ವ್ಯಕ್ತಿ","f.email":"ಇಮೇಲ್","f.location":"ಹಬ್ ಸ್ಥಳ / ಪ್ರದೇಶ","f.count":"ಬೇಕಾದ ರೈಡರ್‌ಗಳು","f.vehicle":"ವಾಹನದ ಪ್ರಕಾರ","f.start":"ಪ್ರಾರಂಭ ದಿನಾಂಕ","f.notes":"ಶಿಫ್ಟ್ ಸಮಯ / ಇತರ ವಿವರಗಳು","f.submitClient":"ವಿಚಾರಣೆಯ ಇಮೇಲ್ ಸಿದ್ಧಪಡಿಸಿ","v.bike":"ಬೈಕ್ / ಸ್ಕೂಟರ್","v.ev":"ಎಲೆಕ್ಟ್ರಿಕ್ ವಾಹನ","v.cycle":"ಸೈಕಲ್","v.any":"ಯಾವುದಾದರೂ","v.none":"ವಾಹನ ಇಲ್ಲ",
-  "rider.title":"ಡೆಲಿವರಿ ಕೆಲಸ ಹುಡುಕುತ್ತಿದ್ದೀರಾ?","rider.lead":"ನಮ್ಮ ಮೂಲಕ ಪ್ರಮುಖ ಡೆಲಿವರಿ ಕಂಪನಿಗಳಿಗೆ ಸೇರಿ. ಹೊಂದಿಕೊಳ್ಳುವ ಶಿಫ್ಟ್ ಮತ್ತು ಸೇರ್ಪಡೆ ಸಹಾಯ.","rider.r1":"18+ ವಯಸ್ಸು ಮತ್ತು ಮಾನ್ಯ ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್","rider.r2":"ಸ್ವಂತ ಬೈಕ್/ಸ್ಕೂಟರ್ (ಇವಿ ಆಯ್ಕೆಗಳೂ ಲಭ್ಯ)","rider.r3":"ಇಂಟರ್ನೆಟ್ ಇರುವ ಸ್ಮಾರ್ಟ್‌ಫೋನ್","rider.r4":"ಆಧಾರ್, ಪ್ಯಾನ್ ಮತ್ತು ಬ್ಯಾಂಕ್ ಖಾತೆ","f.name":"ಪೂರ್ಣ ಹೆಸರು","f.area":"ನೀವು ವಾಸಿಸುವ ಪ್ರದೇಶ","f.age":"ವಯಸ್ಸು","f.licence":"ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್ ಇದೆಯೇ?","f.exp":"ಹಿಂದಿನ ಡೆಲಿವರಿ ಅನುಭವ (ಇದ್ದರೆ)","f.submitRider":"ಅರ್ಜಿಯ ಇಮೇಲ್ ಸಿದ್ಧಪಡಿಸಿ","yes":"ಹೌದು","no":"ಇಲ್ಲ",
+  "enq.title":"ಡೆಲಿವರಿ ರೈಡರ್‌ಗಳು ಬೇಕೇ?","enq.lead":"ನಿಮ್ಮ ಅಗತ್ಯಗಳನ್ನು ತುಂಬಿ ಇಮೇಲ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ. ಫೋನ್ ಸಂಖ್ಯೆ ಅಗತ್ಯವಿಲ್ಲ.","f.company":"ಕಂಪನಿ ಹೆಸರು","f.contact":"ಸಂಪರ್ಕ ವ್ಯಕ್ತಿ","f.email":"ಇಮೇಲ್","f.location":"ಹಬ್ ಸ್ಥಳ / ಪ್ರದೇಶ","f.count":"ಬೇಕಾದ ರೈಡರ್‌ಗಳು","f.vehicle":"ವಾಹನದ ಪ್ರಕಾರ","f.start":"ಪ್ರಾರಂಭ ದಿನಾಂಕ","f.notes":"ಶಿಫ್ಟ್ ಸಮಯ / ಇತರ ವಿವರಗಳು","f.submitClient":"ವಿಚಾರಣೆ ಸಲ್ಲಿಸಿ","v.bike":"ಬೈಕ್ / ಸ್ಕೂಟರ್","v.ev":"ಎಲೆಕ್ಟ್ರಿಕ್ ವಾಹನ","v.cycle":"ಸೈಕಲ್","v.any":"ಯಾವುದಾದರೂ","v.none":"ವಾಹನ ಇಲ್ಲ",
+  "rider.title":"ಡೆಲಿವರಿ ಕೆಲಸ ಹುಡುಕುತ್ತಿದ್ದೀರಾ?","rider.lead":"ನಮ್ಮ ಮೂಲಕ ಪ್ರಮುಖ ಡೆಲಿವರಿ ಕಂಪನಿಗಳಿಗೆ ಸೇರಿ. ಹೊಂದಿಕೊಳ್ಳುವ ಶಿಫ್ಟ್ ಮತ್ತು ಸೇರ್ಪಡೆ ಸಹಾಯ.","rider.r1":"18+ ವಯಸ್ಸು ಮತ್ತು ಮಾನ್ಯ ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್","rider.r2":"ಸ್ವಂತ ಬೈಕ್/ಸ್ಕೂಟರ್ (ಇವಿ ಆಯ್ಕೆಗಳೂ ಲಭ್ಯ)","rider.r3":"ಇಂಟರ್ನೆಟ್ ಇರುವ ಸ್ಮಾರ್ಟ್‌ಫೋನ್","rider.r4":"ಆಧಾರ್, ಪ್ಯಾನ್ ಮತ್ತು ಬ್ಯಾಂಕ್ ಖಾತೆ","f.name":"ಪೂರ್ಣ ಹೆಸರು","f.area":"ನೀವು ವಾಸಿಸುವ ಪ್ರದೇಶ","f.age":"ವಯಸ್ಸು","f.licence":"ಡ್ರೈವಿಂಗ್ ಲೈಸೆನ್ಸ್ ಇದೆಯೇ?","f.exp":"ಹಿಂದಿನ ಡೆಲಿವರಿ ಅನುಭವ (ಇದ್ದರೆ)","f.submitRider":"ಅರ್ಜಿ ಸಲ್ಲಿಸಿ","yes":"ಹೌದು","no":"ಇಲ್ಲ",
   "faq.title":"ಪದೇ ಪದೇ ಕೇಳುವ ಪ್ರಶ್ನೆಗಳು","q1":"ಎಷ್ಟು ಬೇಗ ರೈಡರ್‌ಗಳನ್ನು ಒದಗಿಸುತ್ತೀರಿ?","a1":"ಹೆಚ್ಚಿನ ಅವಶ್ಯಕತೆಗಳಿಗೆ 48–72 ಗಂಟೆಗಳಲ್ಲಿ ಪರಿಶೀಲಿತ ರೈಡರ್‌ಗಳನ್ನು ನಿಯೋಜಿಸುತ್ತೇವೆ.","q2":"ರೈಡರ್ ಬೇಗ ಬಿಟ್ಟರೆ ಏನು?","a2":"ಒಪ್ಪಿದ ಅವಧಿಯೊಳಗೆ ಬಿಟ್ಟ ರೈಡರ್‌ಗಳಿಗೆ ಉಚಿತ ಬದಲಿ ನೀಡುತ್ತೇವೆ.","q3":"ರೈಡರ್‌ಗಳು ಸೇರಲು ಶುಲ್ಕ ಕೊಡಬೇಕೇ?","a3":"ಇಲ್ಲ. ನಮ್ಮ ಮೂಲಕ ಸೇರುವುದು ರೈಡರ್‌ಗಳಿಗೆ ಉಚಿತ.","q4":"ಯಾವ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸೇವೆ ನೀಡುತ್ತೀರಿ?","a4":"ಪ್ರಸ್ತುತ ನಗರ ಮತ್ತು ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳಲ್ಲಿ. ಇತರ ಸ್ಥಳಗಳಿಗೆ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.",
-  "contact.title":"ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ","footer":"ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.","form.note":"ನಿಮ್ಮ ಇಮೇಲ್ ಆಪ್ ತೆರೆಯುತ್ತದೆ. ಕಳುಹಿಸಲು Send ಒತ್ತಿ.",
+  "contact.title":"ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ","footer":"ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.","form.note":"ನಿಮ್ಮ ವಿವರಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಸಲ್ಲಿಸಲಾಗುತ್ತದೆ.",
   "path.c.tag":"ಕಂಪನಿಗಳಿಗೆ","path.c.t":"ನನಗೆ ಡೆಲಿವರಿ ರೈಡರ್‌ಗಳು ಬೇಕು","path.c.go":"ಅವಶ್ಯಕತೆ ಕಳುಹಿಸಿ →",
   "path.r.tag":"ರೈಡರ್‌ಗಳಿಗೆ","path.r.t":"ನನಗೆ ಡೆಲಿವರಿ ಕೆಲಸ ಬೇಕು","path.r.go":"ಈಗಲೇ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ →",
   "tag.company":"ಕಂಪನಿಗಳಿಗೆ","tag.rider":"ಡೆಲಿವರಿ ರೈಡರ್‌ಗಳಿಗೆ",
@@ -72,57 +71,35 @@ document.getElementById("langBtn")?.addEventListener("click", () => {
   setLang(document.documentElement.lang === "kn" ? "en" : "kn");
 });
 
-// Email-only form submission (no Web3Forms and no phone number).
-// A mailto: URL opens a draft in the visitor's email app;
-// the visitor must click Send. This does NOT verify delivery.
+// Submit website forms to our Vercel API (the Google Sheet stays private).
 document.querySelectorAll("#clientForm, #riderForm").forEach(form => {
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
     if (!form.reportValidity()) return;
-    const rider = form.id === "riderForm";
-    const subject = (rider ? "New Rider Application" : "New Client Enquiry") + " - " + CONFIG.name;
-    const data = new FormData(form);
-    const fields = Array.from(data.entries())
-      .filter(([, value]) => typeof value === "string")
-      .map(([key, value]) => key.replaceAll("_", " ").toUpperCase() + ": " + value);
-    const body = [rider ? "NEW RIDER APPLICATION" : "NEW CLIENT ENQUIRY", "", ...fields,
-      "", "Submitted via " + CONFIG.name + " website"].join("\n");
-    const to = rider ? CONFIG.email : CONFIG.enquiryEmail;
-    const url = "mailto:" + to + "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
+    const btn = form.querySelector('button[type="submit"]');
+    const label = btn.textContent;
     const kn = document.documentElement.lang === "kn";
-    alert(kn ? "ಇಮೇಲ್ ಆಪ್ ತೆರೆಯುತ್ತದೆ. ದಯವಿಟ್ಟು Send ಒತ್ತಿ." :
-      "Your email app will open. Click Send to finish your submission.");
-    window.location.href = url;
+    btn.disabled = true;
+    btn.textContent = kn ? "ಸಲ್ಲಿಸಲಾಗುತ್ತಿದೆ..." : "Submitting...";
+    try {
+      const payload = Object.fromEntries(new FormData(form).entries());
+      payload.form_type = form.name;
+      const response = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.success) throw new Error(result.message || "Submission failed");
+      window.location.href = "thanks.html";
+    } catch (error) {
+      alert(kn ? "ಸಲ್ಲಿಕೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಇಮೇಲ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸಿ." :
+        "Could not save your details. Please try again or contact us by email.");
+      btn.disabled = false;
+      btn.textContent = label;
+    }
   });
 });
-
-// Old Web3Forms submission (sends without opening an email app), hidden for now.
-// To re-enable: set web3formsKey in CONFIG, add
-// action="https://api.web3forms.com/submit" to both forms, and remove the mailto handler above.
-// document.querySelectorAll('form[action*="web3forms"]').forEach(form => {
-//   form.addEventListener("submit", async e => {
-//     e.preventDefault();
-//     const kn = document.documentElement.lang === "kn";
-//     const btn = form.querySelector('button[type="submit"]');
-//     const label = btn.textContent;
-//     btn.disabled = true;
-//     btn.textContent = kn ? "ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ..." : "Sending...";
-//     const data = new FormData(form);
-//     data.append("access_key", CONFIG.web3formsKey);
-//     data.append("from_name", CONFIG.name + " website");
-//     try {
-//       const res = await fetch(form.action, { method: "POST", body: data, headers: { Accept: "application/json" } });
-//       const json = await res.json();
-//       if (!json.success) throw new Error(json.message);
-//       window.location.href = "thanks.html";
-//     } catch (err) {
-//       alert(kn ? "ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ." : "Could not send. Please email us.");
-//       btn.disabled = false;
-//       btn.textContent = label;
-//     }
-//   });
-// });
 
 // Mobile menu
 const navLinks = document.getElementById("navLinks");

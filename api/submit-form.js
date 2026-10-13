@@ -247,16 +247,19 @@ module.exports = async function handler(req, res) {
     // Do not log applicant details or secrets
     console.error(
       "Google Sheets submission failed:",
-      error?.code || error?.name || "unknown"
+      error?.code || error?.name || "unknown",
+      error?.detail || ""
     );
 
     const privateScript = error?.code === "SCRIPT_PRIVATE";
 
     return res.status(502).json({
       success: false,
+      code: error?.code || "SCRIPT_ERROR",
       message: privateScript
         ? "Google Sheet is private. Redeploy the Apps Script web app and set access to Anyone."
-        : "Could not save submission. Please try again."
+        : "Could not save submission. Please try again." +
+          (error?.detail ? ` (${error.detail})` : "")
     });
   }
 };
@@ -362,12 +365,21 @@ async function postToGoogleSheet(url, payload) {
   } catch {
     const error = new Error("Google Apps Script returned a non-JSON response");
     error.code = "SCRIPT_BAD_RESPONSE";
+    // Google error pages (e.g. "Script function not found: doPost") are HTML.
+    error.detail = "Apps Script: " + text
+      .replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 160);
     throw error;
   }
 
   if (!response.ok || result.success !== true) {
     const error = new Error("Google Sheets write unsuccessful");
     error.code = "SCRIPT_REJECTED";
+    // Script messages are fixed strings like "Unauthorized" or "Unknown form".
+    error.detail = "Apps Script: " + String(result.message || response.status).slice(0, 160);
     throw error;
   }
 }
